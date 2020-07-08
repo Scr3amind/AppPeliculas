@@ -77,6 +77,13 @@ class Pelicula {
     return 'https://image.tmdb.org/t/p/w500/$posterPath';
   }
 
+   getBackgroundImg(){
+    if(posterPath == null) {
+      return 'https://www.vipspatel.com/wp-content/uploads/2017/04/no_image_available_300x300.jpg';
+    }
+    return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+  }
+
 }
 
 
